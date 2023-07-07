@@ -51,3 +51,7 @@ end
 if vim.fn.executable('gopls') == 1 then
     lspconfig.gopls.setup{on_attach = on_attach, capabilities = capabilities}
 end
+
+if vim.fn.executable('csharp_ls') == 1 then
+    lspconfig.csharp_ls.setup{on_attach = on_attach}
+end
